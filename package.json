@@ -19,10 +19,130 @@
             "import": "./dist/framework/*/index.mjs",
             "require": "./dist/framework/*/index.js"
         },
-        "./recipe/recipe/session/framework/*": {
-            "types": "./dist/recipe/session/framework/*/index.d.ts",
-            "import": "./dist/recipe/session/framework/*/index.mjs",
-            "require": "./dist/recipe/session/framework/*/index.js"
+        "./framework": {
+            "types": "./dist/framework/index.d.ts",
+            "import": "./dist/framework/index.mjs",
+            "require": "./dist/framework/index.js"
+        },
+        "./recipe/dashboard": {
+            "types": "./dist/recipe/dashboard/index.d.ts",
+            "import": "./dist/recipe/dashboard/index.mjs",
+            "require": "./dist/recipe/dashboard/index.js"
+        },
+        "./recipe/emailpassword": {
+            "types": "./dist/recipe/emailpassword/index.d.ts",
+            "import": "./dist/recipe/emailpassword/index.mjs",
+            "require": "./dist/recipe/emailpassword/index.js"
+        },
+        "./recipe/emailpassword/emaildelivery": {
+            "types": "./dist/recipe/emailpassword/emaildelivery/index.d.ts",
+            "import": "./dist/recipe/emailpassword/emaildelivery/index.mjs",
+            "require": "./dist/recipe/emailpassword/emaildelivery/index.js"
+        },
+        "./recipe/emailverification": {
+            "types": "./dist/recipe/emailverification/index.d.ts",
+            "import": "./dist/recipe/emailverification/index.mjs",
+            "require": "./dist/recipe/emailverification/index.js"
+        },
+        "./recipe/emailverification/emaildelivery": {
+            "types": "./dist/recipe/emailverification/emaildelivery/index.d.ts",
+            "import": "./dist/recipe/emailverification/emaildelivery/index.mjs",
+            "require": "./dist/recipe/emailverification/emaildelivery/index.js"
+        },
+        "./recipe/jwt": {
+            "types": "./dist/recipe/jwt/index.d.ts",
+            "import": "./dist/recipe/jwt/index.mjs",
+            "require": "./dist/recipe/jwt/index.js"
+        },
+        "./recipe/openid": {
+            "types": "./dist/recipe/openid/index.d.ts",
+            "import": "./dist/recipe/openid/index.mjs",
+            "require": "./dist/recipe/openid/index.js"
+        },
+        "./recipe/passwordless": {
+            "types": "./dist/recipe/passwordless/index.d.ts",
+            "import": "./dist/recipe/passwordless/index.mjs",
+            "require": "./dist/recipe/passwordless/index.js"
+        },
+        "./recipe/passwordless/emaildelivery": {
+            "types": "./dist/recipe/passwordless/emaildelivery/index.d.ts",
+            "import": "./dist/recipe/passwordless/emaildelivery/index.mjs",
+            "require": "./dist/recipe/passwordless/emaildelivery/index.js"
+        },
+        "./recipe/passwordless/smsdelivery": {
+            "types": "./dist/recipe/passwordless/smsdelivery/index.d.ts",
+            "import": "./dist/recipe/passwordless/smsdelivery/index.mjs",
+            "require": "./dist/recipe/passwordless/smsdelivery/index.js"
+        },
+        "./recipe/session": {
+            "types": "./dist/recipe/session/index.d.ts",
+            "import": "./dist/recipe/session/index.mjs",
+            "require": "./dist/recipe/session/index.js"
+        },
+        "./recipe/session/claims": {
+            "types": "./dist/recipe/session/claims.d.ts",
+            "import": "./dist/recipe/session/claims.mjs",
+            "require": "./dist/recipe/session/claims.js"
+        },
+        "./recipe/session/framework": {
+            "types": "./dist/recipe/index.d.ts",
+            "import": "./dist/recipe/index.mjs",
+            "require": "./dist/recipe/index.js"
+        },
+        "./recipe/session/framework/*": {
+            "types": "./dist/session/framework/*.d.ts",
+            "import": "./dist/session/framework/*.mjs",
+            "require": "./dist/session/framework/*.js"
+        },
+        "./recipe/thirdparty": {
+            "types": "./dist/recipe/thirdparty/index.d.ts",
+            "import": "./dist/recipe/thirdparty/index.mjs",
+            "require": "./dist/recipe/thirdparty/index.js"
+        },
+        "./recipe/thirdparty/providers/*": {
+            "types": "./dist/recipe/thirdparty/providers/*.d.ts",
+            "import": "./dist/recipe/thirdparty/providers/*.mjs",
+            "require": "./dist/recipe/thirdparty/providers/*.js"
+        },
+        "./recipe/thirdparty/providers": {
+            "types": "./dist/recipe/thirdparty/providers/index.d.ts",
+            "import": "./dist/recipe/thirdparty/providers/index.mjs",
+            "require": "./dist/recipe/thirdparty/providers/index.js"
+        },
+        "./recipe/thirdpartyemailpassword": {
+            "types": "./dist/recipe/thirdpartyemailpassword/index.d.ts",
+            "import": "./dist/recipe/thirdpartyemailpassword/index.mjs",
+            "require": "./dist/recipe/thirdpartyemailpassword/index.js"
+        },
+        "./recipe/thirdpartyemailpassword/emaildelivery": {
+            "types": "./dist/recipe/thirdpartyemailpassword/emaildelivery/index.d.ts",
+            "import": "./dist/recipe/thirdpartyemailpassword/emaildelivery/index.mjs",
+            "require": "./dist/recipe/thirdpartyemailpassword/emaildelivery/index.js"
+        },
+        "./recipe/thirdpartypasswordless": {
+            "types": "./dist/recipe/thirdpartypasswordless/index.d.ts",
+            "import": "./dist/recipe/thirdpartypasswordless/index.mjs",
+            "require": "./dist/recipe/thirdpartypasswordless/index.js"
+        },
+        "./recipe/thirdpartypasswordless/emaildelivery": {
+            "types": "./dist/recipe/thirdpartypasswordless/emaildelivery/index.d.ts",
+            "import": "./dist/recipe/thirdpartypasswordless/emaildelivery/index.mjs",
+            "require": "./dist/recipe/thirdpartypasswordless/emaildelivery/index.js"
+        },
+        "./recipe/thirdpartypasswordless/smsdelivery": {
+            "types": "./dist/recipe/thirdpartypasswordless/smsdelivery/index.d.ts",
+            "import": "./dist/recipe/thirdpartypasswordless/smsdelivery/index.mjs",
+            "require": "./dist/recipe/thirdpartypasswordless/smsdelivery/index.js"
+        },
+        "./recipe/usermetadata": {
+            "types": "./dist/recipe/usermetadata/index.d.ts",
+            "import": "./dist/recipe/usermetadata/index.mjs",
+            "require": "./dist/recipe/usermetadata/index.js"
+        },
+        "./recipe/userroles": {
+            "types": "./dist/recipe/userroles/index.d.ts",
+            "import": "./dist/recipe/userroles/index.mjs",
+            "require": "./dist/recipe/userroles/index.js"
         }
     },
     "main": "dist/index.js",
