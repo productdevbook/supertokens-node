@@ -324,7 +324,7 @@
         "supertest": "4.0.2",
         "tsup": "^6.6.3",
         "typedoc": "^0.22.5",
-        "typescript": "4.2"
+        "typescript": "^4.9.5"
     },
     "browser": {
         "fs": false
