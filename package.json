@@ -54,6 +54,9 @@
             "recipe/emailpassword": [
                 "./dist/recipe/emailpassword/index.d.ts"
             ],
+            "recipe/emailpassword/emaildelivery": [
+                "./dist/recipe/emailpassword/emaildelivery/index.d.ts"
+            ],
             "recipe/emailverification": [
                 "./dist/recipe/emailverification/index.d.ts"
             ],
@@ -66,11 +69,17 @@
             "recipe/passwordless": [
                 "./dist/recipe/passwordless/index.d.ts"
             ],
+            "recipe/passwordless/emaildelivery": [
+                "./dist/recipe/passwordless/emaildelivery/index.d.ts"
+            ],
+            "recipe/passwordless/smsdelivery": [
+                "./dist/recipe/passwordless/smsdelivery/index.d.ts"
+            ],
             "recipe/session/framework": [
                 "./dist/recipe/index.d.ts"
             ],
             "recipe/session/framework/*": [
-                "./dist/recipe/*/index.d.ts"
+                "./dist/recipe/*"
             ],
             "recipe/session": [
                 "./dist/recipe/session/index.d.ts"
@@ -87,8 +96,17 @@
             "recipe/thirdpartyemailpassword": [
                 "./dist/recipe/thirdpartyemailpassword/index.d.ts"
             ],
+            "recipe/thirdpartyemailpassword/emaildelivery": [
+                "./dist/recipe/thirdpartyemailpassword/emaildelivery/index.d.ts"
+            ],
             "recipe/thirdpartypasswordless": [
                 "./dist/recipe/thirdpartypasswordless/index.d.ts"
+            ],
+            "recipe/thirdpartypasswordless/emaildelivery": [
+                "./dist/recipe/thirdpartypasswordless/emaildelivery/index.d.ts"
+            ],
+            "recipe/thirdpartypasswordless/smsdelivery": [
+                "./dist/recipe/thirdpartypasswordless/smsdelivery/index.d.ts"
             ],
             "recipe/usermetadata": [
                 "./dist/recipe/usermetadata/index.d.ts"
