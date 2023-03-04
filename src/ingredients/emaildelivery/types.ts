@@ -12,27 +12,27 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import OverrideableBuilder from "supertokens-js-override";
+import OverrideableBuilder from 'supertokens-js-override'
 
-export type EmailDeliveryInterface<T> = {
-    sendEmail: (input: T & { userContext: any }) => Promise<void>;
-};
+export interface EmailDeliveryInterface<T> {
+  sendEmail: (input: T & { userContext: any }) => Promise<void>
+}
 
 /**
  * config class parameter when parent Recipe create a new EmailDeliveryIngredient object via constructor
  */
 export interface TypeInput<T> {
-    service?: EmailDeliveryInterface<T>;
-    override?: (
-        originalImplementation: EmailDeliveryInterface<T>,
-        builder: OverrideableBuilder<EmailDeliveryInterface<T>>
-    ) => EmailDeliveryInterface<T>;
+  service?: EmailDeliveryInterface<T>
+  override?: (
+    originalImplementation: EmailDeliveryInterface<T>,
+    builder: OverrideableBuilder<EmailDeliveryInterface<T>>
+  ) => EmailDeliveryInterface<T>
 }
 
 export interface TypeInputWithService<T> {
-    service: EmailDeliveryInterface<T>;
-    override?: (
-        originalImplementation: EmailDeliveryInterface<T>,
-        builder: OverrideableBuilder<EmailDeliveryInterface<T>>
-    ) => EmailDeliveryInterface<T>;
+  service: EmailDeliveryInterface<T>
+  override?: (
+    originalImplementation: EmailDeliveryInterface<T>,
+    builder: OverrideableBuilder<EmailDeliveryInterface<T>>
+  ) => EmailDeliveryInterface<T>
 }
