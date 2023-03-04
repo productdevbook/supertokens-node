@@ -3,7 +3,7 @@
     "version": "13.1.2",
     "description": "NodeJS driver for SuperTokens core",
     "engines": {
-        "node": ">=16"
+        "node": ">=14"
     },
     "files": [
         "dist"
