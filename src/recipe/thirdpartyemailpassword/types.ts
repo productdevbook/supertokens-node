@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { APIOptions as ThirdPartyAPIOptionsOriginal, TypeProvider } from '../thirdparty/types'
 import {
   RecipeInterface as EPRecipeInterface,
@@ -150,6 +150,7 @@ export interface RecipeInterface {
     password?: string
     userContext: any
   }): Promise<{ status: 'OK' | 'UNKNOWN_USER_ID_ERROR' | 'EMAIL_ALREADY_EXISTS_ERROR' }>
+
 }
 
 export type EmailPasswordAPIOptions = EmailPasswordAPIOptionsOriginal
@@ -290,6 +291,7 @@ export interface APIInterface {
   appleRedirectHandlerPOST:
   | undefined
   | ((input: { code: string; state: string; options: ThirdPartyAPIOptions; userContext: any }) => Promise<void>)
+
 }
 
 export type TypeThirdPartyEmailPasswordEmailDeliveryInput = TypeEmailPasswordEmailDeliveryInput

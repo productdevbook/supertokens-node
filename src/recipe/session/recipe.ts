@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import RecipeModule from '../../recipeModule'
 import { APIHandled, HTTPMethod, NormalisedAppinfo, RecipeListFunction } from '../../types'
 import NormalisedURLPath from '../../normalisedURLPath'
@@ -102,6 +102,7 @@ export default class SessionRecipe extends RecipeModule {
         .build()
     }
     else {
+      // eslint-disable-next-line no-lone-blocks
       {
         const builder = new OverrideableBuilder(
           RecipeImplementation(

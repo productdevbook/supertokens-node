@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import RecipeModule from '../../recipeModule'
 import { APIHandled, HTTPMethod, NormalisedAppinfo, RecipeListFunction } from '../../types'
 import EmailVerificationRecipe from '../emailverification/recipe'

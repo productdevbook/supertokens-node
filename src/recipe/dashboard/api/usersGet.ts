@@ -101,20 +101,24 @@ export default async function usersGet(_: APIInterface, options: APIOptions): Pr
     const userObj = usersResponse.users[i]
     metaDataFetchPromises.push(
       (): Promise<any> =>
-        new Promise(async (resolve, reject) => {
+        new Promise((resolve, reject) => {
           try {
-            const userMetaDataResponse = await UserMetaData.getUserMetadata(userObj.user.id)
-            const { first_name, last_name } = userMetaDataResponse.metadata
+            UserMetaData.getUserMetadata(userObj.user.id).then((r) => {
+              const { first_name, last_name } = r.metadata
 
-            updatedUsersArray[i] = {
-              recipeId: userObj.recipeId,
-              user: {
-                ...userObj.user,
-                firstName: first_name,
-                lastName: last_name,
-              },
-            }
-            resolve(true)
+              updatedUsersArray[i] = {
+                recipeId: userObj.recipeId,
+                user: {
+                  ...userObj.user,
+                  firstName: first_name,
+                  lastName: last_name,
+                },
+              }
+
+              resolve(true)
+            }).catch((e) => {
+              reject(e)
+            })
           }
           catch (e) {
             // Something went wrong when fetching user meta data

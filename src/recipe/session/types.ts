@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { BaseRequest } from '../../framework/request'
 import { BaseResponse } from '../../framework/response'
 import NormalisedURLPath from '../../normalisedURLPath'

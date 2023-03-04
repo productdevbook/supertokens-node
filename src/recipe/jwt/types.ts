@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { BaseRequest } from '../../framework/request'
 import { BaseResponse } from '../../framework/response'
 import { GeneralErrorResponse } from '../../types'

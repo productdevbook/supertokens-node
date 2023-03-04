@@ -53,6 +53,8 @@ export class ProcessState {
   waitForEvent = async (state: PROCESS_STATE, timeInMS = 7000) => {
     const startTime = Date.now()
     return new Promise((resolve) => {
+      // TODO: Unexpected aliasing of 'this' to local variable.eslint@typescript-eslint/no-this-alias
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       const actualThis = this
       function tryAndGet() {
         const result = actualThis.getEventByLastEventByName(state)

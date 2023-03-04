@@ -78,6 +78,8 @@ function normaliseURLPathOrThrowError(input: string): string {
   // at this point, we should be able to convert it into a fake URL and recursively call this function.
   try {
     // test that we can convert this to prevent an infinite loop
+    // TODO: Do not use 'new' for side effects.eslintno-new
+    // eslint-disable-next-line no-new
     new URL(`http://example.com${input}`)
 
     return normaliseURLPathOrThrowError(`http://example.com${input}`)

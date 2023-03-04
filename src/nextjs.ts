@@ -37,11 +37,11 @@ export default class NextJS {
     request: any,
     response: any,
   ): Promise<T> {
-    return new Promise<T>(async (resolve: any, reject: any) => {
+    return new Promise<T>((resolve: any, reject: any) => {
       request.__supertokensFromNextJS = true
       try {
         let callbackCalled = false
-        const result = await middleware((err) => {
+        const result = middleware((err) => {
           callbackCalled = true
           next(request, response, resolve, reject)(err)
         })
@@ -49,7 +49,7 @@ export default class NextJS {
           return resolve(result)
       }
       catch (err) {
-        await errorHandler()(err, request, response, (errorHandlerError: any) => {
+        errorHandler()(err, request, response, (errorHandlerError: any) => {
           if (errorHandlerError !== undefined)
             return reject(errorHandlerError)
 

@@ -13,7 +13,7 @@
  * under the License.
  */
 import Twilio from 'twilio'
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import {
   ServiceInterface,
   TypeInput,

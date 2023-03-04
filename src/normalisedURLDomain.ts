@@ -68,6 +68,8 @@ function normaliseURLDomainOrThrowError(input: string, ignoreProtocol = false): 
 
     // at this point, it should be a valid URL. So we test that before doing a recursive call
     try {
+      // TODO: eslint error fix
+      // eslint-disable-next-line no-new
       new URL(input)
       return normaliseURLDomainOrThrowError(input, true)
     }

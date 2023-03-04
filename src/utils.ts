@@ -3,9 +3,10 @@ import * as psl from 'psl'
 import type { AppInfo, HTTPMethod, JSONObject, NormalisedAppinfo } from './types'
 import NormalisedURLDomain from './normalisedURLDomain'
 import NormalisedURLPath from './normalisedURLPath'
-import type { BaseRequest, BaseResponse } from './framework'
 import { logDebugMessage } from './logger'
 import { HEADER_RID } from './constants'
+import type { BaseResponse } from './framework/response'
+import type { BaseRequest } from './framework/request'
 
 export function getLargestVersionFromIntersection(v1: string[], v2: string[]): string | undefined {
   const intersection = v1.filter(value => v2.includes(value))

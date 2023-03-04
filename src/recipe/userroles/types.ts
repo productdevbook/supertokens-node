@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 
 export interface TypeInput {
   skipAddingRolesToAccessToken?: boolean

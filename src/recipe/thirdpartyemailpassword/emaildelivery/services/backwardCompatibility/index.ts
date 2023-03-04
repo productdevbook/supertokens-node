@@ -34,14 +34,12 @@ implements EmailDeliveryInterface<TypeThirdPartyEmailPasswordEmailDeliveryInput>
       ) => Promise<void>
     },
   ) {
-    {
-      this.emailPasswordBackwardCompatibilityService = new EmailPasswordBackwardCompatibilityService(
-        emailPasswordRecipeInterfaceImpl,
-        appInfo,
-        isInServerlessEnv,
-        resetPasswordUsingTokenFeature,
-      )
-    }
+    this.emailPasswordBackwardCompatibilityService = new EmailPasswordBackwardCompatibilityService(
+      emailPasswordRecipeInterfaceImpl,
+      appInfo,
+      isInServerlessEnv,
+      resetPasswordUsingTokenFeature,
+    )
   }
 
   sendEmail = async (input: TypeThirdPartyEmailPasswordEmailDeliveryInput & { userContext: any }) => {

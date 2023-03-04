@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 
 export interface SmsDeliveryInterface<T> {
   sendSms: (input: T & { userContext: any }) => Promise<void>

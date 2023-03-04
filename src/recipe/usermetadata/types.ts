@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { JSONObject } from '../../types'
 
 export interface TypeInput {
@@ -70,4 +70,5 @@ export interface RecipeInterface {
   }) => Promise<{
     status: 'OK'
   }>
+
 }

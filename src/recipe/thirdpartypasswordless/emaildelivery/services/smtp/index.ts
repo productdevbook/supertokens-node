@@ -13,7 +13,7 @@
  * under the License.
  */
 import { createTransport } from 'nodemailer'
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { ServiceInterface, TypeInput } from '../../../../../ingredients/emaildelivery/services/smtp'
 import { TypeThirdPartyPasswordlessEmailDeliveryInput } from '../../../types'
 import { EmailDeliveryInterface } from '../../../../../ingredients/emaildelivery/types'

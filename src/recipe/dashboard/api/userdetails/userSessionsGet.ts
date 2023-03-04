@@ -33,14 +33,15 @@ export const userSessionsGet: APIFunction = async (_: APIInterface, options: API
 
   for (let i = 0; i < response.length; i++) {
     sessionInfoPromises.push(
-      new Promise(async (resolve, reject) => {
+      new Promise((resolve, reject) => {
         try {
-          const sessionResponse = await Session.getSessionInformation(response[i])
-
-          if (sessionResponse !== undefined)
-            sessions[i] = sessionResponse
-
-          resolve()
+          Session.getSessionInformation(response[i]).then((session) => {
+            if (session !== undefined)
+              sessions[i] = session
+            resolve()
+          }).catch((err) => {
+            reject(err)
+          })
         }
         catch (e) {
           reject(e)

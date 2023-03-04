@@ -13,7 +13,7 @@
  * under the License.
  */
 
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import { BaseRequest } from '../../framework/request'
 import { BaseResponse } from '../../framework/response'
 import { GeneralErrorResponse, NormalisedAppinfo } from '../../types'
@@ -156,4 +156,5 @@ export interface APIInterface {
   appleRedirectHandlerPOST:
   | undefined
   | ((input: { code: string; state: string; options: APIOptions; userContext: any }) => Promise<void>)
+
 }

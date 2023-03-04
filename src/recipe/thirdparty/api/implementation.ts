@@ -104,7 +104,6 @@ export default function getAPIInterface(): APIInterface {
             | { status: 'NO_EMAIL_GIVEN_BY_PROVIDER' }
             | GeneralErrorResponse
         > {
-      let userInfo
       let accessTokenAPIResponse: any
 
       {
@@ -149,7 +148,7 @@ export default function getAPIInterface(): APIInterface {
         })
       }
 
-      userInfo = await providerInfo.getProfileInfo(accessTokenAPIResponse.data, userContext)
+      const userInfo = await providerInfo.getProfileInfo(accessTokenAPIResponse.data, userContext)
 
       const emailInfo = userInfo.email
       if (emailInfo === undefined) {

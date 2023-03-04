@@ -12,7 +12,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import OverrideableBuilder from 'supertokens-js-override'
+import OverrideableBuilder from 'overrideableBuilder'
 import RecipeModule from '../../recipeModule'
 import { APIHandled, HTTPMethod, NormalisedAppinfo, RecipeListFunction } from '../../types'
 import PasswordlessRecipe from '../passwordless/recipe'
