@@ -27,13 +27,15 @@ import RecipeModule from "./recipeModule";
 import { HEADER_RID, HEADER_FDI } from "./constants";
 import NormalisedURLDomain from "./normalisedURLDomain";
 import NormalisedURLPath from "./normalisedURLPath";
-import { BaseRequest, BaseResponse } from "./framework";
+
 import { TypeFramework } from "./framework/types";
 import STError from "./error";
 import { logDebugMessage } from "./logger";
 import { PostSuperTokensInitCallbacks } from "./postSuperTokensInitCallbacks";
 import DashboardIndex from "./recipe/dashboard";
 import DashboardRecipe from "./recipe/dashboard/recipe";
+import { BaseRequest } from "./framework/request";
+import { BaseResponse } from "./framework/response";
 
 export default class SuperTokens {
     private static instance: SuperTokens | undefined;

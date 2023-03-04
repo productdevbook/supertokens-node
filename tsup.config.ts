@@ -44,7 +44,6 @@ export default <Options>{
         'src/recipe/userroles/index.ts',
     ],
     outDir: 'dist',
-    target: 'node16',
     format: ['esm', 'cjs'],
     clean: true,
     dts: true,

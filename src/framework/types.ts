@@ -12,8 +12,11 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
+
+import { BaseRequest } from "./request";
+import { BaseResponse } from "./response";
+
 export type TypeFramework = "express" | "fastify" | "hapi" | "loopback" | "koa" | "awsLambda";
-import { BaseRequest, BaseResponse } from ".";
 
 export let SchemaFramework = {
     type: "string",

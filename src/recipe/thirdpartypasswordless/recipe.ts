@@ -16,7 +16,8 @@ import RecipeModule from "../../recipeModule";
 import { NormalisedAppinfo, APIHandled, RecipeListFunction, HTTPMethod } from "../../types";
 import PasswordlessRecipe from "../passwordless/recipe";
 import ThirdPartyRecipe from "../thirdparty/recipe";
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import STError from "./error";
 import {
     TypeInput,

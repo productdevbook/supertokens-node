@@ -15,7 +15,8 @@
 
 import SuperTokensError from "../../error";
 import error from "../../error";
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import normalisedURLPath from "../../normalisedURLPath";
 import { Querier } from "../../querier";
 import RecipeModule from "../../recipeModule";

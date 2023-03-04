@@ -35,7 +35,8 @@ import {
     VALIDATE_KEY_API,
 } from "./constants";
 import NormalisedURLPath from "../../normalisedURLPath";
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import dashboard from "./api/dashboard";
 import error from "../../error";
 import validateKey from "./api/validateKey";

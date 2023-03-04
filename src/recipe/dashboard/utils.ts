@@ -13,7 +13,8 @@
  * under the License.
  */
 
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import NormalisedURLPath from "../../normalisedURLPath";
 import { HTTPMethod, NormalisedAppinfo } from "../../types";
 import { sendNon200ResponseWithMessage } from "../../utils";

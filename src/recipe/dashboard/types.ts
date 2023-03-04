@@ -14,7 +14,8 @@
  */
 
 import OverrideableBuilder from "supertokens-js-override";
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import { NormalisedAppinfo } from "../../types";
 
 export type TypeInput = {

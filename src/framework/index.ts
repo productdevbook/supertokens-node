@@ -12,8 +12,6 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-export { BaseRequest } from "./request";
-export { BaseResponse } from "./response";
 
 import * as expressFramework from "./express";
 import * as fastifyFramework from "./fastify";

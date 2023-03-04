@@ -12,13 +12,15 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import NormalisedURLPath from "../../normalisedURLPath";
 import { RecipeInterface as JWTRecipeInterface, APIInterface as JWTAPIInterface } from "../jwt/types";
 import OverrideableBuilder from "supertokens-js-override";
 import { RecipeInterface as OpenIdRecipeInterface, APIInterface as OpenIdAPIInterface } from "../openid/types";
 import { JSONObject, JSONValue } from "../../types";
 import { GeneralErrorResponse } from "../../types";
+
 
 export type KeyInfo = {
     publicKey: string;

@@ -13,7 +13,8 @@
  * under the License.
  */
 import STError from "../../error";
-import { BaseRequest, BaseResponse } from "../../framework";
+import { BaseRequest } from "../../framework/request";
+import { BaseResponse } from "../../framework/response";
 import normalisedURLPath from "../../normalisedURLPath";
 import RecipeModule from "../../recipeModule";
 import { APIHandled, HTTPMethod, NormalisedAppinfo, RecipeListFunction } from "../../types";
