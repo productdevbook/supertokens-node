@@ -23,6 +23,8 @@ import {
     TypePasswordlessEmailDeliveryInput,
     TypePasswordlessSmsDeliveryInput,
 } from "./types";
+export * from "./types";
+
 
 export default class Wrapper {
     static init = Recipe.init;

@@ -1,4 +1,5 @@
 import OpenIdRecipe from "./recipe";
+export * from "./types";
 
 export default class OpenIdRecipeWrapper {
     static init = OpenIdRecipe.init;

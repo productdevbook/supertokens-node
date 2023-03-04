@@ -16,6 +16,8 @@
 import Recipe from "./recipe";
 import SuperTokensError from "./error";
 import { RecipeInterface, User, APIOptions, APIInterface, TypeEmailPasswordEmailDeliveryInput } from "./types";
+export * from "./types";
+
 
 export default class Wrapper {
     static init = Recipe.init;

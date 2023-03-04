@@ -16,6 +16,7 @@
 import { JSONObject } from "../../types";
 import Recipe from "./recipe";
 import { RecipeInterface } from "./types";
+export * from "./types";
 
 export default class Wrapper {
     static init = Recipe.init;

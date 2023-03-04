@@ -13,6 +13,7 @@
  * under the License.
  */
 import Recipe from "./recipe";
+export * from "./types";
 import { RecipeInterface, APIOptions, APIInterface } from "./types";
 
 export default class Wrapper {

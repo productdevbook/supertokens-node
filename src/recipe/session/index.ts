@@ -31,6 +31,8 @@ import { JSONObject } from "../../types";
 import frameworks from "../../framework";
 import SuperTokens from "../../supertokens";
 import { getRequiredClaimValidators } from "./utils";
+export * from "./types";
+
 
 // For Express
 export default class SessionWrapper {

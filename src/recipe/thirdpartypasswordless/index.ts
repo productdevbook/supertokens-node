@@ -26,6 +26,7 @@ import {
 } from "./types";
 import { TypeProvider } from "../thirdparty/types";
 import { TypePasswordlessSmsDeliveryInput } from "../passwordless/types";
+export * from "./types";
 
 export default class Wrapper {
     static init = Recipe.init;

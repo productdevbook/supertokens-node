@@ -17,6 +17,7 @@ import { PermissionClaim } from "./permissionClaim";
 import Recipe from "./recipe";
 import { RecipeInterface } from "./types";
 import { UserRoleClaim } from "./userRoleClaim";
+export * from "./types";
 
 export default class Wrapper {
     static init = Recipe.init;
