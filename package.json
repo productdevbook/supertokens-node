@@ -2,15 +2,107 @@
     "name": "supertokens-node",
     "version": "13.1.2",
     "description": "NodeJS driver for SuperTokens core",
-    "main": "index.js",
     "engines": {
         "node": ">=16"
+    },
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./framework/*": {
+            "types": "./dist/framework/*/index.d.ts",
+            "import": "./dist/framework/*/index.mjs",
+            "require": "./dist/framework/*/index.js"
+        },
+        "./recipe/recipe/session/framework/*": {
+            "types": "./dist/recipe/session/framework/*/index.d.ts",
+            "import": "./dist/recipe/session/framework/*/index.mjs",
+            "require": "./dist/recipe/session/framework/*/index.js"
+        }
+    },
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "index.d.ts",
+    "typesVersions": {
+        "*": {
+            "framework": [
+                "./dist/framework/index.d.ts"
+            ],
+            "framework/*": [
+                "./dist/framework/*/index.d.ts"
+            ],
+            "recipe/*": [
+                "./dist/recipe/*/index.d.ts"
+            ],
+            "*": [
+                "dist/index.d.ts"
+            ],
+            "nextjs": [
+                "./dist/nextjs.d.ts"
+            ],
+            "types": [
+                "./dist/types.d.ts"
+            ],
+            "recipe/dashboard": [
+                "./dist/recipe/dashboard/index.d.ts"
+            ],
+            "recipe/emailpassword": [
+                "./dist/recipe/emailpassword/index.d.ts"
+            ],
+            "recipe/emailverification": [
+                "./dist/recipe/emailverification/index.d.ts"
+            ],
+            "recipe/jwt": [
+                "./dist/recipe/jwt/index.d.ts"
+            ],
+            "recipe/openid": [
+                "./dist/recipe/openid/index.d.ts"
+            ],
+            "recipe/passwordless": [
+                "./dist/recipe/passwordless/index.d.ts"
+            ],
+            "recipe/session/framework": [
+                "./dist/recipe/index.d.ts"
+            ],
+            "recipe/session/framework/*": [
+                "./dist/recipe/*/index.d.ts"
+            ],
+            "recipe/session": [
+                "./dist/recipe/session/index.d.ts"
+            ],
+            "recipe/session/claims": [
+                "./dist/recipe/session/claims.d.ts"
+            ],
+            "recipe/thirdparty": [
+                "./dist/recipe/thirdparty/index.d.ts"
+            ],
+            "recipe/thirdparty/providers/*": [
+                "./dist/recipe/thirdparty/providers/*/index.d.ts"
+            ],
+            "recipe/thirdpartyemailpassword": [
+                "./dist/recipe/thirdpartyemailpassword/index.d.ts"
+            ],
+            "recipe/thirdpartypasswordless": [
+                "./dist/recipe/thirdpartypasswordless/index.d.ts"
+            ],
+            "recipe/usermetadata": [
+                "./dist/recipe/usermetadata/index.d.ts"
+            ],
+            "recipe/userroles": [
+                "./dist/recipe/userroles/index.d.ts"
+            ]
+        }
     },
     "packageManager": "pnpm@7.28.0",
     "scripts": {
         "test": "TEST_MODE=testing npx mocha --timeout 500000",
         "build-check": "cd lib && npx tsc -p tsconfig.json --noEmit && cd ../test/with-typescript && npx tsc -p tsconfig.json --noEmit",
-        "build": "cd lib && rm -rf build && npx tsc -p tsconfig.json && cd ../test/with-typescript && npx tsc -p tsconfig.json --noEmit && cd ../.. && npm run post-build",
+        "build": "tsup",
         "pretty": "npx pretty-quick .",
         "post-build": "node add-ts-no-check.js",
         "build-pretty": "npm run build && npm run pretty && npm run pretty",
@@ -89,6 +181,7 @@
         "react": "^17.0.2",
         "sinon": "^14.0.0",
         "supertest": "4.0.2",
+        "tsup": "^6.6.3",
         "typedoc": "^0.22.5",
         "typescript": "4.2"
     },
